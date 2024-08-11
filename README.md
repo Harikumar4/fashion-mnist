@@ -32,6 +32,7 @@ The model is built using a Sequential CNN architecture with the following layers
 Various visualizations were generated during the training and evaluation process:
 
 1. **Accuracy and Loss Curves**: Graphs showing the model's accuracy and loss over epochs for both training and validation datasets.
+  ![Training Accuracy and Loss Curves](assets/training_and_validation_accuracy.png)
 2. **Confusion Matrix**: A heatmap showing the performance of the model in correctly classifying each class.
 3. **Sample Predictions**: A grid of sample images with their true labels and the model's predictions.
 
