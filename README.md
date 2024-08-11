@@ -36,6 +36,7 @@ Various visualizations were generated during the training and evaluation process
 2. **Confusion Matrix**: A heatmap showing the performance of the model in correctly classifying each class.
  ![confusion_matrix](assets/confusion_matrix.png)
 3. **Sample Predictions**: A grid of sample images with their true labels and the model's predictions.
+![confusion_matrix](assets/output.png)
 
 ## Usage
 
