@@ -8,7 +8,7 @@ The model is designed to classify fashion items such as T-shirts, trousers, pull
 
 ## Dataset
 
-The dataset used for this project is divided into two CSV files:
+The dataset used in this project is available on Kaggle at the following link: [Fashion MNIST Dataset](https://www.kaggle.com/datasets/hiteshk07/fashionmnist-dsc).
 - `fashion-mnist_train.csv`: Contains the training data.
 - `fashion-mnist_test.csv`: Contains the test data.
 
