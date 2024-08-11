@@ -33,8 +33,9 @@ Various visualizations were generated during the training and evaluation process
 
 1. **Accuracy and Loss Curves**: Graphs showing the model's accuracy and loss over epochs for both training and validation datasets.
   ![Training Accuracy and Loss Curves](assets/1.png) ![Test Accuracy and Loss Curves](assets/3.png)
-3. **Confusion Matrix**: A heatmap showing the performance of the model in correctly classifying each class.
-4. **Sample Predictions**: A grid of sample images with their true labels and the model's predictions.
+2. **Confusion Matrix**: A heatmap showing the performance of the model in correctly classifying each class.
+ ![confusion_matrix](assets/confusion_matrix.png)
+3. **Sample Predictions**: A grid of sample images with their true labels and the model's predictions.
 
 ## Usage
 
