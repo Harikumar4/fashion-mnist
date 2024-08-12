@@ -79,6 +79,7 @@ The following visualizations are used to understand the model’s performance be
 
   <img src="../assets/2.png" alt="Validation and Test Loss" width="600"/>
 - **Confusion Matrix:** The confusion matrix provides a detailed breakdown of the model's predictions, showing how often each class was correctly predicted or misclassified as another class. This helps in identifying specific areas where the model may be confused between similar classes.
+
   <img src="../assets/confusion_matrix.png" alt="Confusion Matrix" width="600"/>
 
 
