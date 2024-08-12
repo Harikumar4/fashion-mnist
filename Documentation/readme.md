@@ -65,21 +65,21 @@ The following visualizations are used to understand the model’s performance be
 
 - **Training and Validation Accuracy:** This plot shows how the model’s accuracy on both training and validation data changes over time.
 
-  <img src="assets/1.png" alt="Training and Validation Accuracy" width="600"/>
+  <img src="../assets/1.png" alt="Training and Validation Accuracy" width="600"/>
 
 - **Precision-Recall Curve:** This curve plots precision versus recall for each class, helping to evaluate the model’s performance on individual classes.
 
-  <img src="assets/4.png" alt="Precision-Recall Curve" width="600"/>
+  <img src="../assets/4.png" alt="Precision-Recall Curve" width="600"/>
 
 - **Training and Validation Loss:** This plot shows how the loss changes during training and validation, helping to track how well the model is learning and if there are any signs of overfitting.
 
-  <img src="assets/3.png" alt="Training and Validation Loss" width="600"/>
+  <img src="../assets/3.png" alt="Training and Validation Loss" width="600"/>
 
 - **Validation and Test Loss:** This plot compares the loss on validation data with the loss on test data, helping to understand how the model performs on unseen data over time.
 
-  <img src="assets/2.png" alt="Validation and Test Loss" width="600"/>
+  <img src="../assets/2.png" alt="Validation and Test Loss" width="600"/>
 - **Confusion Matrix:** The confusion matrix provides a detailed breakdown of the model's predictions, showing how often each class was correctly predicted or misclassified as another class. This helps in identifying specific areas where the model may be confused between similar classes.
-  <img src="assets/confusion_matrix.png" alt="Confusion Matrix" width="600"/>
+  <img src="../assets/confusion_matrix.png" alt="Confusion Matrix" width="600"/>
 
 
 These metrics and visualizations offer a comprehensive view of the model’s performance, revealing its strengths and highlighting areas for improvement.
