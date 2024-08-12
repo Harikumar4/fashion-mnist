@@ -17,7 +17,6 @@ To ensure that the data is in an appropriate range for the neural network, the p
 **Training and Validation Data**
 
 The training data was optionally divided into two parts: one for training the model and the other for validating its performance during development. This split helps in assessing how well the model is likely to perform on unseen data.
-Model Architecture Documentation
 
 
 ### 3. Layer Descriptions
@@ -53,49 +52,35 @@ The final layer provides the classification results. It has 10 units, each repre
 
 **Loss Function and Optimizer:**
 
-- **Loss Function:** We use **sparse categorical cross-entropy** to measure how close the model’s guesses are to the actual categories of the images. This approach is good for our task because it works well with integer labels for our 10 different clothing categories.
+- **Loss Function:** We use **sparse categorical cross-entropy** to measure how close the model’s guesses are to the actual categories of the images. This approach is good for our task because it works well with integer labels for our 10 different clothing categories and is best suited for multi-class classification.
 
-- **Optimizer:** The **Adam** optimizer is used to train the model. Adam is like a smart learning guide that adjusts the learning rate as training progresses, making it faster and more efficient. It helps the model learn better by adapting to the complexity of the data.
+- **Optimizer:** The **Adam** optimizer is used to train the model.
 
 **Training Process:**
 
-During training, the model looks at the images and their labels multiple times (20 epochs) to learn how to classify them correctly. We also use a separate set of images (validation data) to keep track of how well the model is performing. The `history` object helps us monitor the model’s learning progress, showing how its accuracy improves over time and letting us know if it’s learning well or if any adjustments are needed.
+During training, the model looks at the images and their labels multiple times (10 epochs) to learn how to classify them correctly. We also use a separate set of images (validation data) to keep track of how well the model is performing. The `history` object helps us monitor the model’s learning progress, showing how its accuracy improves over time and letting us know if it’s learning well or if any adjustments are needed.
 
-### 5. Evaluation Metrics
-
-**Accuracy and Loss:**
-
-- **Accuracy:** This metric measures how often the model’s predictions are correct. During training, accuracy is calculated by comparing the model’s predicted labels with the true labels on both the training and validation datasets. Higher accuracy indicates better performance.
-
-- **Loss:** Loss quantifies how well the model’s predictions match the true labels. A lower loss means the model’s predictions are closer to the actual values. Loss is tracked during training and validation to monitor how well the model is learning over time.
-
-**Precision, Recall, and F1-Score:**
-
-- **Precision:** Precision measures the accuracy of the positive predictions. It tells us how many of the items labeled as positive are actually positive. High precision means that when the model predicts a class, it’s usually correct.
-
-- **Recall:** Recall measures the model’s ability to identify all relevant positive cases. It shows how many actual positives were correctly identified by the model. High recall means the model is good at finding all the positive cases.
-
-- **F1-Score:** The F1-Score is the harmonic mean of precision and recall. It provides a single score that balances both precision and recall, which is useful when you need to account for both false positives and false negatives.
-
-**Confusion Matrix:**
-
-- A **confusion matrix** is a table that summarizes the performance of the classification model by showing the number of correct and incorrect predictions for each class. It helps to see where the model is making errors and which classes are being confused with each other.
-
-**Visualizing Model Performance:**
-
+### 5. Visualization
 The following visualizations are used to understand the model’s performance better:
 
 - **Training and Validation Accuracy:** This plot shows how the model’s accuracy on both training and validation data changes over time.
 
-- **Validation and Test Accuracy:** This plot compares the model’s accuracy on validation data with its accuracy on test data, allowing us to see how well the model generalizes to unseen data.
+  <img src="assets/1.png" alt="Training and Validation Accuracy" width="600"/>
 
 - **Precision-Recall Curve:** This curve plots precision versus recall for each class, helping to evaluate the model’s performance on individual classes.
 
-- **Precision, Recall, and F1-Score for Each Class:** This bar plot displays the precision, recall, and F1-score for each class, giving a detailed view of the model’s performance across all categories.
+  <img src="assets/4.png" alt="Precision-Recall Curve" width="600"/>
 
 - **Training and Validation Loss:** This plot shows how the loss changes during training and validation, helping to track how well the model is learning and if there are any signs of overfitting.
 
+  <img src="assets/3.png" alt="Training and Validation Loss" width="600"/>
+
 - **Validation and Test Loss:** This plot compares the loss on validation data with the loss on test data, helping to understand how the model performs on unseen data over time.
+
+  <img src="assets/2.png" alt="Validation and Test Loss" width="600"/>
+- **Confusion Matrix:** The confusion matrix provides a detailed breakdown of the model's predictions, showing how often each class was correctly predicted or misclassified as another class. This helps in identifying specific areas where the model may be confused between similar classes.
+  <img src="assets/confusion_matrix.png" alt="Confusion Matrix" width="600"/>
+
 
 These metrics and visualizations offer a comprehensive view of the model’s performance, revealing its strengths and highlighting areas for improvement.
 
