@@ -42,6 +42,21 @@ Various visualizations were generated during the training and evaluation process
 
 To run this project in Google Colab, upload your dataset CSV files and ensure the file paths are correctly set. The model can be trained and evaluated using the provided code.
 
+## Areas of Improvement
+
+While the model achieved an accuracy of 89%, there are certain areas where it can be improved:
+
+### Problem
+The model tends to confuse between similar clothing items, particularly between shirts and t-shirts, as well as shirts and coats. This indicates that the current model may not be extracting complex enough features to accurately distinguish between these similar items.
+
+### Solution
+To address this issue, more complex feature extraction techniques may be required. Potential solutions include:
+- **Deeper Layers:** Incorporating more layers in the neural network to capture finer details and differences between classes.
+- **Transfer Learning:** Leveraging pre-trained models to benefit from learned features in similar tasks and improve classification accuracy for challenging classes.
+
+These improvements could help the model better differentiate between similar clothing items and enhance overall performance.
+
+
 ## Conclusion
 
 This project provides an effective approach to classifying fashion items using a CNN. The model's performance could be further improved by fine-tuning hyperparameters, adding more data, or experimenting with different model architectures.
